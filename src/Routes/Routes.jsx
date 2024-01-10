@@ -10,11 +10,13 @@ import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import PrivateRoute from "../ContextProviders/PrivateRoute";
 import PrivateLoginRegisterRoute from "../ContextProviders/PrivateLoginRegisterRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const myRoutes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
